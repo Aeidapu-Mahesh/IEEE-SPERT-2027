@@ -3,14 +3,14 @@ import "@/styles/globals.css"
 import { Inter } from "next/font/google"
 import type { Metadata } from "next"
 import { ThemeProvider } from "@/components/theme-provider"
-import { BackgroundVideo } from "@/components/BackgroundVideo" // 👈 add this import
+import { CursorGlow } from "@/components/CursorGlow"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "IEEE-SPERT 2025",
+  title: "IEEE-SPERT 2027",
   description:
-    "IEEE International Conference on Smart Power, Energy, Renewables, and Transportation",
+    "IEEE International Conference on Smart Power, Energy, Renewables, and Transportation — 17-19 May 2027",
   icons: {
     icon: "/favicon.ico",
   },
@@ -27,20 +27,15 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={`${inter.className} relative bg-transparent`}>
-        {/* 🔹 Global background video (behind everything) */}
-        <BackgroundVideo />
-
+      <body className={`${inter.className} bg-background`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
-          {/* Content sits above video */}
-          <main className="relative z-10">
-            {children}
-          </main>
+          {children}
+          <CursorGlow />
         </ThemeProvider>
       </body>
     </html>
