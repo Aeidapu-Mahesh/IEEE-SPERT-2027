@@ -9,67 +9,41 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import VisitorCounter from "@/app/components/VisitorCounter"
 import { importantDates } from "@/lib/important-dates"
+import { tracks } from "@/lib/tracks"
 import {
   ArrowRight,
+  Atom,
   BatteryCharging,
+  Bot,
   CalendarDays,
   Car,
   Cpu,
   FileText,
   Leaf,
-  LineChart,
   MapPin,
   Network,
   PlugZap,
-  ShieldCheck,
+  Rocket,
+  Settings2,
   Sun,
   Zap,
 } from "lucide-react"
 
 const CONFERENCE_START = "2027-05-17T09:00:00"
 
-const focusAreas = [
-  {
-    icon: Zap,
-    title: "Grid-Integrated Power Converters",
-    description: "Power converters for integration of renewable energy into the grid, its control and management.",
-  },
-  {
-    icon: BatteryCharging,
-    title: "Energy Management & Storage",
-    description: "Energy management and storage technologies powering the grid of tomorrow.",
-  },
-  {
-    icon: PlugZap,
-    title: "EV Charging Infrastructure",
-    description: "Charging systems and infrastructure for electrical transportation.",
-  },
-  {
-    icon: Car,
-    title: "EV Power Converters & Drives",
-    description: "Power converters and drive systems for electric vehicles.",
-  },
-  {
-    icon: Cpu,
-    title: "Control & Automation",
-    description: "Advances in control theory and automation for power and energy systems.",
-  },
-  {
-    icon: Network,
-    title: "Grid Resiliency & Flexibility",
-    description: "Building resilient, flexible grids for a renewables-heavy future.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "AI, Big Data & Cybersecurity",
-    description: "AI, big data and cybersecurity for power, energy and transportation.",
-  },
-  {
-    icon: LineChart,
-    title: "Electricity Markets & Policy",
-    description: "Electricity market design and the regulatory framework shaping it.",
-  },
-]
+const trackIcons: Record<string, typeof Zap> = {
+  T1: Network,
+  T2: Zap,
+  T3: Settings2,
+  T4: Sun,
+  T5: BatteryCharging,
+  T6: PlugZap,
+  T7: Car,
+  T8: Cpu,
+  T9: Atom,
+  T10: Rocket,
+  T11: Bot,
+}
 
 const whyAttend = [
   { icon: Leaf, title: "Sustainability-first research", description: "Peer-reviewed work at the intersection of clean energy and mobility." },
@@ -327,18 +301,28 @@ export default function HomePage() {
               </Button>
             </div>
 
-            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              {focusAreas.map(({ icon: Icon, title, description }) => (
-                <Card key={title} className="border-slate-900/5 bg-white shadow-sm dark:border-white/10 dark:bg-slate-900">
-                  <CardContent className="p-6">
-                    <Icon className="size-6 text-emerald-600 dark:text-emerald-400" />
-                    <h3 className="mt-3 text-sm font-semibold text-slate-900 dark:text-white">{title}</h3>
-                    <p className="mt-1.5 text-xs leading-relaxed text-slate-600 dark:text-slate-300">
-                      {description}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
+            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {tracks.map(({ code, title, subtopics }) => {
+                const Icon = trackIcons[code]
+                return (
+                  <Card key={code} className="border-slate-900/5 bg-white shadow-sm dark:border-white/10 dark:bg-slate-900">
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-2">
+                        <Icon className="size-6 text-emerald-600 dark:text-emerald-400" />
+                        <span className="text-xs font-bold uppercase tracking-wide text-emerald-600 dark:text-emerald-400">
+                          {code}
+                        </span>
+                      </div>
+                      <h3 className="mt-3 text-sm font-semibold text-slate-900 dark:text-white">{title}</h3>
+                      <ul className="mt-2 space-y-1 text-xs leading-relaxed text-slate-600 dark:text-slate-300">
+                        {subtopics.map((subtopic) => (
+                          <li key={subtopic}>&bull; {subtopic}</li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                )
+              })}
             </div>
 
             <Card className="mt-6 border-amber-500/20 bg-amber-500/5">

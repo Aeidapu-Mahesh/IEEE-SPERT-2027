@@ -2,6 +2,7 @@ import Link from "next/link"
 import Navbar from "@/app/components/Navbar"
 import Footer from "@/app/components/Footer"
 import { importantDates } from "@/lib/important-dates"
+import { tracks } from "@/lib/tracks"
 
 export default function CallForPapersPage() {
   return (
@@ -14,33 +15,41 @@ export default function CallForPapersPage() {
               Call for Papers
             </h1>
 
-            <div className="grid gap-8 md:grid-cols-2">
-              {/* Technical Tracks */}
-              <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
-                <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-white">Technical Tracks</h2>
-                <ul className="list-disc space-y-2 pl-5 text-slate-600 dark:text-slate-300">
-                  <li>Track 1: Power converters for Integration of Renewable Energy into the grid, its control and management</li>
-                  <li>Track 2: Energy Management and Storage Technologies</li>
-                  <li>Track 3: Charging Systems and Infrastructure for Electrical Transportation</li>
-                  <li>Track 4: Power Converters and Drive Systems for Electric Vehicles</li>
-                  <li>Track 5: Control & Automation</li>
-                  <li>Track 6: Grid resiliency and flexibility</li>
-                  <li>Track 7: AI, Big data and Cybersecurity for power, energy and transportation</li>
-                  <li>Track 8: Electricity market and regulatory framework</li>
-                </ul>
-              </div>
+            {/* Important Dates */}
+            <div className="rounded-xl border border-emerald-600/20 bg-emerald-600/5 p-6 shadow-sm">
+              <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-white">Important Dates</h2>
+              <ul className="grid gap-3 text-slate-700 sm:grid-cols-2 lg:grid-cols-5 dark:text-slate-200">
+                {importantDates.map(({ label, date }) => (
+                  <li key={label} className="rounded-lg bg-white p-3 dark:bg-slate-900">
+                    <span className="block text-xs uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                      {label}
+                    </span>
+                    <span className="font-semibold text-emerald-700 dark:text-emerald-400">{date}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-              {/* Important Dates */}
-              <div className="rounded-xl border border-emerald-600/20 bg-emerald-600/5 p-6 shadow-sm">
-                <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-white">Important Dates</h2>
-                <ul className="space-y-3 text-slate-700 dark:text-slate-200">
-                  {importantDates.map(({ label, date }) => (
-                    <li key={label} className="flex items-baseline justify-between gap-4">
-                      <span>{label}</span>
-                      <span className="font-semibold text-emerald-700 dark:text-emerald-400">{date}</span>
-                    </li>
-                  ))}
-                </ul>
+            {/* Technical Tracks */}
+            <div className="mt-8">
+              <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-white">Technical Tracks</h2>
+              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                {tracks.map(({ code, title, subtopics }) => (
+                  <div
+                    key={code}
+                    className="rounded-xl border border-slate-900/5 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900"
+                  >
+                    <span className="text-xs font-bold uppercase tracking-wide text-emerald-600 dark:text-emerald-400">
+                      {code}
+                    </span>
+                    <h3 className="mt-1 text-sm font-semibold text-slate-900 dark:text-white">{title}</h3>
+                    <ul className="mt-2 list-disc space-y-1 pl-4 text-xs leading-relaxed text-slate-600 dark:text-slate-300">
+                      {subtopics.map((subtopic) => (
+                        <li key={subtopic}>{subtopic}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </div>
             </div>
 
