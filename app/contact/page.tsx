@@ -18,7 +18,7 @@ export default function ContactPage() {
           <div className="mt-8">
             <h2 className="text-2xl font-bold text-white">Contact us to the email provided:</h2>
             <p className="text-white">Sardar Vallabhbhai National Institute of Technology, Surat</p>
-            <p className="text-white">Email: <a href="mailto:spert2025@gmail.com" className="text-blue-500">spert2025@gmail.com</a></p>
+            <p className="text-white">Email: <a href="mailto:spert2027@gmail.com" className="text-blue-500">spert2027@gmail.com</a></p>
             <p className="text-white">SVNIT, Surat - 395007 (Gujarat) India</p>
           </div>
         </div>

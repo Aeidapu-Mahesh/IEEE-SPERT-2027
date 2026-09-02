@@ -254,7 +254,7 @@ export default function CallForSpecialSessionPage() {
             </p>
             <ul className="list-disc pl-5 text-white space-y-2">
               <li>Please submit your Special Session proposal in PDF or Word format via email to:</li>
-              <li>spert2025@gmail.com</li>
+              <li>spert2027@gmail.com</li>
               <li>with the subject line: "Special Session Proposal – [Your Proposed Session Title]"</li>
             </ul>
           </div>
