@@ -1,239 +1,176 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import Navbar from "@/app/components/Navbar"
 import Footer from "@/app/components/Footer"
 
-export default function OrganizingCommitteePage() {
+type Member = { name: string; role: string }
+
+function Section({ title, members }: { title: string; members: Member[] }) {
   return (
-    <main className="flex-1">
-      <Navbar />
-      <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center text-white">
-            Organizing Committee
-          </h1>
-
-          {/* Committee Sections */}
-          <div className="space-y-12">
-            {/* Chief Patron & Patron */}
-            <div className="grid gap-8 md:grid-cols-2">
-              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-                <h2 className="text-2xl font-bold mb-4 text-primary">Chief Patron</h2>
-                <p className="text-lg">Prof. Bhim Singh</p>
-                <p className="text-gray-600 dark:text-gray-300">IEEE Fellow, Chairman, BoG, SVNIT Surat</p>
-              </div>
-              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-                <h2 className="text-2xl font-bold mb-4 text-primary">Patron</h2>
-                <p className="text-lg">Prof. Anupam Shukla</p>
-                <p className="text-gray-600 dark:text-gray-300">Director, SVNIT Surat</p>
-              </div>
-            </div>
-
-            {/* Honorary Chairs */}
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-              <h2 className="text-2xl font-bold mb-4 text-primary">Honorary Chairs</h2>
-              <ul className="space-y-4">
-                <li>
-                  <p className="text-lg">Dr. Brij N. Singh</p>
-                  <p className="text-gray-600 dark:text-gray-300">IEEE Fellow, John Deere Fellow, Electrification R&D Manager in John Deere USA</p>
-                </li>
-                <li>
-                  <p className="text-lg">Prof. Victor Veliadis</p>
-                  <p className="text-gray-600 dark:text-gray-300">IEEE Fellow, CTO of PowerAmerica and Professor at NC State University</p>
-                </li>
-                <li>
-                  <p className="text-lg">Dr. Sanjeet Kumar Dwivedi</p>
-                  <p className="text-gray-600 dark:text-gray-300">Fellow IET, Senior Consultant, RDT Engineers, Denmark</p>
-                </li>
-              </ul>
-            </div>
-
-            {/* General Chairs */}
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-              <h2 className="text-2xl font-bold mb-4 text-primary">General Chairs</h2>
-              <ul className="space-y-4">
-                <li>
-                  <p className="text-lg">Prof. Chirag N. Paunwala</p>
-                  <p className="text-gray-600 dark:text-gray-300">Chair - IEEE Gujarat Section</p>
-                </li>
-                <li>
-                  <p className="text-lg">Prof. Mahmadasraf A. Mulla</p>
-                  <p className="text-gray-600 dark:text-gray-300">DoEE, SVNIT Surat</p>
-                </li>
-                <li>
-                  <p className="text-lg">Dr. Aeidapu Mahesh</p>
-                  <p className="text-gray-600 dark:text-gray-300">DoEE, SVNIT Surat</p>
-                </li>
-              </ul>
-            </div>
-
-            {/* Organizing Chairs */}
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-              <h2 className="text-2xl font-bold mb-4 text-primary">Organizing Chairs</h2>
-              <ul className="space-y-4">
-                {[
-                  "Dr. Suresh Lakhimsetty, DoEE, SVNIT Surat",
-                  "Dr. Priyesh Chauhan, IITRAM, Ahmedabad",
-                  "Prof. Pranav B. Darji, DoEE, SVNIT Surat",
-                  "Dr. Sanjay Tolani, DoEE, SVNIT Surat",
-                  "Dr. K. V. Praveen Kumar, DoEE, SVNIT Surat",
-                  "Dr Rajashekhar Reddy Chilipi, DoEE, SVNIT Surat",
-                  
-                ].map((chair, index) => (
-                  <li key={index} className="text-lg">{chair}</li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Conference Secretaries */}
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-              <h2 className="text-2xl font-bold mb-4 text-primary">Conference Secretaries</h2>
-              <ul className="space-y-4">
-                {[
-                  "Dr. Jammala Venkataramanaiah, DoEE, SVNIT",
-                  "Dr. Basant K. Sethi, DoEE, SVNIT",
-                  "Dr. Gangireddy Sushnigdha, DoEE, SVNIT",
-                  "Dr. Akanksha Shukla, DoEE, SVNIT"
-                ].map((secretary, index) => (
-                  <li key={index} className="text-lg">{secretary}</li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Other Committee Sections */}
-            {[
-              {
-                title: "Finance Chairs",
-                members: [
-                  "Prof. Mahmadasraf A. Mulla, DoEE, SVNIT Surat",
-                  "Dr. Suresh Lakhimsetty, DoEE, SVNIT Surat",
-                  "Dr. Anjali Diwan, Marwadi University, Rajkot",
-                  "Dr. Manisha Shah, Nirma University, Ahmedabad",
-                ]
-              },
-              {
-                title: "Technical Program Committee Chairs",
-                members: [
-                  "Dr. Amit Ved, Marwadi University, Rajkot",
-                  "Dr. Srinivas Bhaskar karanki, IEEE PELS Vice-Chair India-Pacific, IIT Bhubhaneshwar",
-                  "Prof. Mahmadasraf A. Mulla, DoEE, SVNIT Surat",
-                  "Dr. Aeidapu Mahesh, DoEE, SVNIT Surat",
-                  "Prof. Sabha Raj Arya, DoEE, SVNIT Surat",
-                  "Prof. Anandita Chowdhury, DoEE, SVNIT Surat",
-                  "Dr. Chandini P Gor, DoEE, SVNIT Surat",
-                  "Dr. Brij N. Singh, IEEE Fellow, John Deere Fellow, Electrification R&D Manager in John Deere USA",
-                  "Prof. Victor Veliadis, IEEE Fellow, CTO of PowerAmerica and Professor at NC State University",
-                  "Dr. Surender Reddy Salkuti, Department of Railroad and Electrical Engineering, Woosong University, Republic of Korea",
-                ]
-              },
-
-              {
-                title: "Publication Chairs",
-                members: [
-                  "Prof. Rakesh Maurya, DoEE, SVNIT Surat",
-                  "Dr. Sanjay Tolani, DoEE, SVNIT Surat",
-                  "Dr. K. V. Praveen Kumar, DoEE, SVNIT Surat",
-                ]
-              },
-
-               {
-                title: "Publicity Chairs",
-                members: [
-                  "Prof. Ashish K Panchal, DoEE, SVNIT Surat",
-                  "Dr. Sunanda Sinha, CEE, MNIT Jaipur",
-                  "Dr. G Sushnigdha, DoEE, SVNIT Surat",
-                ]
-              },
-
-               {
-                title: "Special Session Chairs",
-                members: [
-                  "Dr. Giribabu Dyanamina, MANIT Bhopal",
-                  "Dr. Tejavathu Ramesh, NIT Andhra Pradesh",
-                  "Dr. Jammala Venkataramanaiah, DoEE, SVNIT",
-                ]
-              },
-
-              {
-                title: "Tutorial and Workshop Chairs",
-                members: [
-                  "Dr. Priyesh Chauhan, IITRAM, Ahmedabad",
-                  "Dr. Rajashekhar Reddy Chilipi, DoEE, SVNIT Surat",
-                  "Dr. Prasanta Kundu, DoEE, SVNIT Surat"
-                ]
-              },
-
-              {
-                title: "Institute Advisory Committee Chairs",
-                members: [
-                  "Prof. Varsha A Shah, DoEE, SVNIT Surat",
-                  "Prof. H R Jariwala, DoEE, SVNIT Surat",
-                  "Prof. R Chudamani, DoEE, SVNIT Surat",
-                ]
-              },
-              
-              // Add other committees here...
-            ].map((committee, index) => (
-              <div key={index} className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-                <h2 className="text-2xl font-bold mb-4 text-primary">{committee.title}</h2>
-                <ul className="space-y-4">
-                  {committee.members.map((member, memberIndex) => (
-                    <li key={memberIndex} className="text-lg">{member}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-
-            {/* Advisory Committees */}
-            <div className="grid gap-8 md:grid-cols-2">
-              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-                <h2 className="text-2xl font-bold mb-4 text-primary">National Advisory Committee Members</h2>
-                <ul className="space-y-4">
-                  {[
-                    "Prof. Bhim Singh, IIT Delhi",
-                    "Prof. K. Siva Kumar, IIT Hyderabad",
-                    "Prof. Raghavan K, IIT Gandhinagar",
-                    "Dr. Deepak Ronanki, IIT Madras",
-                    "Prof. Pramod Agarwal, IIT Roorkee",
-                    "Prof. B. Murali Mohan, IIT Kharagpur",
-                    "Prof. Narsa Reddy Tummuru, IIT Bhubaneshwar",
-                    "Prof. Bharat Singh Rajpurohit, IIT Jodhpur",
-                    "Prof. Pradhyuman Chaturvedi, VNIT Nagpur",
-                    "Prof. Ashwani Kumar, NIT Kurukshetra",
-                    "Prof. V.T. Somasekhar, DoEE, NIT Warangal",
-                    "Dr. Naveen Yalla, IIT BHU",
-                    "Prof. R B Jadeja, Marwadi University",
-                    "Dr. Gopal Gajjar, Hitachi Energy",
-                    "Dr. Vijay K. Shah, ABB, Vadodara"
-                  ].map((member, index) => (
-                    <li key={index} className="text-lg">{member}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-                <h2 className="text-2xl font-bold mb-4 text-primary">International Advisory Committee Members</h2>
-                <ul className="space-y-4">
-                  {[
-                    "Dr. Brij N. Singh, IEEE Fellow, John Deere Fellow, Electrification R&D Manager in John Deere USA",
-                    "Prof. Victor Veliadis, IEEE Fellow, CTO of PowerAmerica and Professor at NC State University",
-                    "Prof. Akshay Rathore, National University of Singapore",
-                    "Prof. Sanjib Kumar Panda, Department of Electrical Engineering, NUS",
-                    "Jiaxing Lei, School of Electrical Engineering, Southeast University, China",
-                    "Prof. Akhtar Kalam, Victoria University, Melbourne, Victoria 8001 Australia",
-                    "Dr. Anurag Sharma, Newcastle University, Singapore",
-                    "Dr. Dhivya Sampath Kumar, Singapore Institute of Technology, Singapore",
-                    "Yam P. Siwakoti, Associate Professor at the University of Technology Sydney Macquarie Park, New South Wales, Australia"
-                  ].map((member, index) => (
-                    <li key={index} className="text-lg">{member}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <Footer />
-    </main>
+    <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
+      <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-white">{title}</h2>
+      <ul className="space-y-4">
+        {members.map((member, index) => (
+          <li key={index}>
+            <p className="text-lg font-semibold text-slate-900 dark:text-white">{member.name}</p>
+            <p className="text-sm text-slate-600 dark:text-slate-300">{member.role}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }
 
+const chiefPatron: Member[] = [{ name: "Prof. Bhim Singh", role: "IEEE Fellow, Chairman, BoG, SVNIT, Surat" }]
+
+const patron: Member[] = [{ name: "Prof. Anupam Shukla", role: "Director, SVNIT, Surat" }]
+
+const honoraryChairs: Member[] = [
+  { name: "Dr. Brij N. Singh", role: "IEEE Fellow, John Deere Fellow, Electrification R&D Manager in John Deere USA" },
+  { name: "Prof. Sanjib Kumar Panda", role: "Department of Electrical Engineering, NUS" },
+  { name: "Prof. Victor Veliadis", role: "IEEE Fellow, CTO of PowerAmerica and Professor at NC State University" },
+  { name: "Dr. Sanjeet Kumar Dwivedi", role: "Fellow IET, Senior Consultant, RDT Engineers, Denmark" },
+]
+
+const generalChairs: Member[] = [
+  { name: "Prof. Chirag N. Paunwala", role: "Chair - IEEE Gujarat Section" },
+  { name: "Prof. Mahmadasraf A. Mulla", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. Aeidapu Mahesh", role: "DoEE, SVNIT, Surat" },
+]
+
+const organizingChairs: Member[] = [
+  { name: "Prof. Sabha Raj Arya", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. Amit Kumar", role: "University of Cagliari, Italy" },
+  { name: "Dr. Sushnigdha Gangireddy", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. Akanksha Shukla", role: "DoEE, SVNIT, Surat" },
+]
+
+const organizingSecretary: Member[] = [
+  { name: "Dr. Suresh Lakhimsetty", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. Jammala Venkataramaniah", role: "DoEE, SVNIT, Surat" },
+]
+
+const financeChairs: Member[] = [
+  { name: "Dr. Manisha Shah", role: "Nirma University, Ahmedabad" },
+  { name: "Dr. Suresh Lakhimsetty", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. Basant Kumar Sethi", role: "DoEE, SVNIT, Surat" },
+  { name: "Prof. Mahmadasraf A. Mulla", role: "DoEE, SVNIT, Surat" },
+]
+
+const technicalProgramCommitteeChairs: Member[] = [
+  { name: "Dr. Amit Ved", role: "Marwadi University, Rajkot" },
+  { name: "Dr. Srinivas Bhaskar Karanki", role: "IEEE PELS Vice-Chair India-Pacific, IIT Bhubhaneshwar" },
+  { name: "Dr. Tripura Pidikiti", role: "IEEE IES Hyderabad Hub Leader, RVR JC College of Engineering, Guntur" },
+  { name: "Prof. Ehsan Jamshidpour", role: "Groupe de Recherche en Énergie Électrique de Nancy (GREEN), University of Lorraine, France" },
+  { name: "Prof. Roland Ryndzionek", role: "Gdańsk University of Technology, Poland" },
+  { name: "Prof. Marcus Morawiec", role: "Gdańsk University of Technology, Poland" },
+  { name: "Prof. Sussana Mocci", role: "University of Cagliari, Italy" },
+  { name: "Prof. Anandita Chowdhury", role: "DoEE, SVNIT, Surat" },
+  { name: "Prof. R. Chudamani", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. Brij N. Singh", role: "IEEE Fellow, John Deere Fellow, Electrification R&D Manager in John Deere USA" },
+  { name: "Prof. Victor Veliadis", role: "IEEE Fellow, CTO of PowerAmerica and Professor at NC State University" },
+]
+
+const publicationChairs: Member[] = [
+  { name: "Prof. Ashish K. Panchal", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. H. G. Patel", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. Akanksha Shukla", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. Chandani P. Gor", role: "DoEE, SVNIT, Surat" },
+]
+
+const publicityChairs: Member[] = [
+  { name: "Prof. Pranav B. Darji", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. Sushnigdha Gangireddy", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. Tejavathu Ramesh", role: "NIT Andhra Pradesh" },
+]
+
+const specialSessionChairs: Member[] = [
+  { name: "Prof. Rakesh Maurya", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. V. Mahajan", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. Jammala Venkataramanaiah", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. Giribabu Dyanamina", role: "MANIT Bhopal" },
+]
+
+const tutorialAndWorkshopChairs: Member[] = [
+  { name: "Dr. Prasanta Kundu", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. K. D. Mistry", role: "DoEE, SVNIT, Surat" },
+  { name: "Prof. Mahmadasraf A. Mulla", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. Sanjay Tolani", role: "DoEE, SVNIT, Surat" },
+]
+
+const instituteAdvisoryCommitteeChairs: Member[] = [
+  { name: "Prof. S. N. Sharma", role: "DoEE, SVNIT, Surat" },
+  { name: "Prof. Varsha A. Shah", role: "DoEE, SVNIT, Surat" },
+  { name: "Prof. H. R. Jariwala", role: "DoEE, SVNIT, Surat" },
+  { name: "Dr. Rajasekharareddy Chilipi", role: "DoEE, SVNIT, Surat" },
+]
+
+const nationalAdvisoryCommitteeMembers: Member[] = [
+  { name: "Prof. Bhim Singh", role: "IIT Delhi" },
+  { name: "Prof. K. Siva Kumar", role: "IIT Hyderabad" },
+  { name: "Prof. Raghavan K", role: "IIT Gandhinagar" },
+  { name: "Dr. Deepak Ronanki", role: "IIT Madras" },
+  { name: "Prof. Pramod Agarwal", role: "IIT Roorkee" },
+  { name: "Prof. B. Murali Mohan", role: "IIT Kharagpur" },
+  { name: "Prof. Narsa Reddy Tummuru", role: "IIT Bhubaneshwar" },
+  { name: "Prof. Bharat Singh Rajpurohit", role: "IIT Jodhpur" },
+  { name: "Prof. Pradhyuman Chaturvedi", role: "VNIT Nagpur" },
+  { name: "Prof. Ashwani Kumar", role: "NIT Kurukshetra" },
+  { name: "Prof. V. T. Somasekhar", role: "DoEE, NIT Warangal" },
+  { name: "Dr. Naveen Yalla", role: "IIT BHU" },
+  { name: "Prof. R. B. Jadeja", role: "Marwadi University" },
+  { name: "Dr. Gopal Gajjar", role: "Hitachi Energy" },
+  { name: "Dr. Vijay K. Shah", role: "ABB, Vadodara" },
+]
+
+const internationalAdvisoryCommitteeMembers: Member[] = [
+  { name: "Dr. Brij N. Singh", role: "IEEE Fellow, John Deere Fellow, Electrification R&D Manager in John Deere USA" },
+  { name: "Prof. Victor Veliadis", role: "IEEE Fellow, CTO of PowerAmerica and Professor at NC State University" },
+  { name: "Prof. Akshay Rathore", role: "National University of Singapore" },
+  { name: "Prof. Sanjib Kumar Panda", role: "Department of Electrical Engineering, NUS" },
+  { name: "Jiaxing Lei", role: "School of Electrical Engineering, Southeast University, China" },
+  { name: "Prof. Akhtar Kalam", role: "Victoria University, Melbourne, Victoria 8001 Australia" },
+  { name: "Dr. Anurag Sharma", role: "Newcastle University, Singapore" },
+  { name: "Dr. Dhivya Sampath Kumar", role: "Singapore Institute of Technology, Singapore" },
+  { name: "Yam P. Siwakoti", role: "Associate Professor at the University of Technology Sydney Macquarie Park, New South Wales, Australia" },
+]
+
+export default function OrganizingCommitteePage() {
+  return (
+    <div className="flex min-h-screen flex-col bg-background">
+      <Navbar />
+      <main className="flex-1">
+        <section className="w-full py-12 md:py-20">
+          <div className="container px-4 md:px-6">
+            <h1 className="mb-10 text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl md:text-5xl dark:text-white">
+              Organizing Committee
+            </h1>
+
+            <div className="space-y-8">
+              <div className="grid gap-8 md:grid-cols-2">
+                <Section title="Chief Patron" members={chiefPatron} />
+                <Section title="Patron" members={patron} />
+              </div>
+
+              <Section title="Honorary Chairs" members={honoraryChairs} />
+              <Section title="General Chairs" members={generalChairs} />
+              <Section title="Organizing Chairs" members={organizingChairs} />
+              <Section title="Organizing Secretary" members={organizingSecretary} />
+              <Section title="Finance Chairs" members={financeChairs} />
+              <Section title="Technical Program Committee Chairs" members={technicalProgramCommitteeChairs} />
+              <Section title="Publication Chairs" members={publicationChairs} />
+              <Section title="Publicity Chairs" members={publicityChairs} />
+              <Section title="Special Session Chairs" members={specialSessionChairs} />
+              <Section title="Tutorial and Workshop Chairs" members={tutorialAndWorkshopChairs} />
+              <Section title="Institute Advisory Committee Chairs" members={instituteAdvisoryCommitteeChairs} />
+
+              <div className="grid gap-8 md:grid-cols-2">
+                <Section title="National Advisory Committee Members" members={nationalAdvisoryCommitteeMembers} />
+                <Section title="International Advisory Committee Members" members={internationalAdvisoryCommitteeMembers} />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  )
+}
