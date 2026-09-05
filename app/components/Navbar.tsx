@@ -24,6 +24,7 @@ const navItems: NavItem[] = [
       { name: "About Us", href: "/about/about-us" },
     ],
   },
+  { name: "Organizing Committee", href: "/about/organizing-committee" },
   {
     name: "Authors",
     href: "/authors",
