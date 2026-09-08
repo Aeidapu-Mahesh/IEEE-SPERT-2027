@@ -154,17 +154,34 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="mt-8 flex flex-col gap-4 min-[400px]:flex-row">
+              <div className="mt-6 flex items-center gap-2">
+                <span className="relative flex size-2.5">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-amber-400 opacity-75" />
+                  <span className="relative inline-flex size-2.5 rounded-full bg-amber-500" />
+                </span>
+                <span className="text-sm font-bold text-amber-600 dark:text-amber-400">
+                  Accepting submissions now!
+                </span>
+              </div>
+
+              <div className="mt-4 flex flex-col gap-4 min-[400px]:flex-row">
                 <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700" asChild>
                   <Link href="/authors/call-for-papers">
                     Call for Papers <ArrowRight className="ml-1 size-4" />
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
-                  <a href="https://cmt3.research.microsoft.com/SPERT2027" target="_blank" rel="noopener noreferrer">
-                    Submit Your Paper Now
-                  </a>
-                </Button>
+                <div className="animate-border-spin rounded-lg p-[2px] [background:conic-gradient(from_var(--border-angle),#10b981,#eab308,#3b82f6,#ec4899,#10b981)]">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    asChild
+                    className="rounded-[calc(0.375rem-1px)] border-0 bg-white hover:bg-slate-50 dark:bg-slate-950 dark:hover:bg-slate-900"
+                  >
+                    <a href="https://cmt3.research.microsoft.com/SPERT2027" target="_blank" rel="noopener noreferrer">
+                      Submit Your Paper Now
+                    </a>
+                  </Button>
+                </div>
               </div>
             </div>
 
