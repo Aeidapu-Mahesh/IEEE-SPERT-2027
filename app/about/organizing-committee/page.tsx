@@ -37,7 +37,6 @@ const generalChairs: Member[] = [
 ]
 
 const organizingChairs: Member[] = [
-  { name: "Prof. Sabha Raj Arya", role: "DoEE, SVNIT, Surat" },
   { name: "Dr. Amit Kumar", role: "University of Cagliari, Italy" },
   { name: "Dr. Sushnigdha Gangireddy", role: "DoEE, SVNIT, Surat" },
   { name: "Dr. Akanksha Shukla", role: "DoEE, SVNIT, Surat" },
@@ -65,6 +64,7 @@ const technicalProgramCommitteeChairs: Member[] = [
   { name: "Prof. Sussana Mocci", role: "University of Cagliari, Italy" },
   { name: "Prof. Anandita Chowdhury", role: "DoEE, SVNIT, Surat" },
   { name: "Prof. R. Chudamani", role: "DoEE, SVNIT, Surat" },
+  { name: "Prof. Sabha Raj Arya", role: "DoEE, SVNIT, Surat" },
   { name: "Dr. Brij N. Singh", role: "IEEE Fellow, John Deere Fellow, Electrification R&D Manager in John Deere USA" },
   { name: "Prof. Victor Veliadis", role: "IEEE Fellow, CTO of PowerAmerica and Professor at NC State University" },
 ]
