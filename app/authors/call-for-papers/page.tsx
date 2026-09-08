@@ -106,8 +106,14 @@ export default function CallForPapersPage() {
                 <div>
                   <h2 className="mb-2 text-2xl font-bold text-slate-900 dark:text-white">Paper Submission Link</h2>
                   <p className="text-slate-600 dark:text-slate-300">
-                    The Microsoft CMT submission portal for IEEE-SPERT 2027 will be announced closer to the
-                    submission window.
+                    <a
+                      href="https://cmt3.research.microsoft.com/SPERT2027"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-emerald-700 underline dark:text-emerald-400"
+                    >
+                      https://cmt3.research.microsoft.com/SPERT2027
+                    </a>
                   </p>
                 </div>
               </div>

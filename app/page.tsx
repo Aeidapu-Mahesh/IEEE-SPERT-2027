@@ -160,8 +160,10 @@ export default function HomePage() {
                     Call for Papers <ArrowRight className="ml-1 size-4" />
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline">
-                  Submit Your Paper Now
+                <Button size="lg" variant="outline" asChild>
+                  <a href="https://cmt3.research.microsoft.com/SPERT2027" target="_blank" rel="noopener noreferrer">
+                    Submit Your Paper Now
+                  </a>
                 </Button>
               </div>
             </div>

@@ -65,7 +65,7 @@ export default function RegistrationInstructionsPage() {
                     </div>
                   </li>
                   <li>
-                    <strong>FINAL UPLOAD:</strong> Submit the converted PDF to the IEEE SPERT 2025 CMT Portal: <a href="https://cmt3.research.microsoft.com/SPERT2025" target="_blank" rel="noopener noreferrer" className="underline text-primary">CMT Portal</a>
+                    <strong>FINAL UPLOAD:</strong> Submit the converted PDF to the IEEE SPERT 2027 CMT Portal: <a href="https://cmt3.research.microsoft.com/SPERT2027" target="_blank" rel="noopener noreferrer" className="underline text-primary">CMT Portal</a>
                   </li>
                 </ol>
               </div>
@@ -78,7 +78,7 @@ export default function RegistrationInstructionsPage() {
                   <li><strong>RESPONSE SHEET:</strong> Explain how each reviewer's comment has been addressed.</li>
                   <li><strong>PLAGIARISM REPORT:</strong> Generate with Turnitin or iThenticate.</li>
                   <li><strong>ZIP FOLDER:</strong> Name the folder with your Paper ID (e.g., PID402). Include both the response sheet and plagiarism report.</li>
-                  <li>Upload this ZIP file under “SUPPLEMENTARY FILE UPLOAD” in CMT Portal: <a href="https://cmt3.research.microsoft.com/SPERT2025" target="_blank" rel="noopener noreferrer" className="underline text-primary">CMT Portal</a>.</li>
+                  <li>Upload this ZIP file under “SUPPLEMENTARY FILE UPLOAD” in CMT Portal: <a href="https://cmt3.research.microsoft.com/SPERT2027" target="_blank" rel="noopener noreferrer" className="underline text-primary">CMT Portal</a>.</li>
                 </ol>
               </div>
 
