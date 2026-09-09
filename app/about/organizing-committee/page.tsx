@@ -62,6 +62,7 @@ const technicalProgramCommitteeChairs: Member[] = [
   { name: "Prof. Roland Ryndzionek", role: "Gdańsk University of Technology, Poland" },
   { name: "Prof. Marcus Morawiec", role: "Gdańsk University of Technology, Poland" },
   { name: "Prof. Sussana Mocci", role: "University of Cagliari, Italy" },
+  { name: "Prof. Roberto Baccoli", role: "University of Cagliari, Italy" },
   { name: "Prof. Anandita Chowdhury", role: "DoEE, SVNIT, Surat" },
   { name: "Prof. R. Chudamani", role: "DoEE, SVNIT, Surat" },
   { name: "Prof. Sabha Raj Arya", role: "DoEE, SVNIT, Surat" },
@@ -131,6 +132,7 @@ const internationalAdvisoryCommitteeMembers: Member[] = [
   { name: "Dr. Anurag Sharma", role: "Newcastle University, Singapore" },
   { name: "Dr. Dhivya Sampath Kumar", role: "Singapore Institute of Technology, Singapore" },
   { name: "Yam P. Siwakoti", role: "Associate Professor at the University of Technology Sydney Macquarie Park, New South Wales, Australia" },
+  { name: "Prof. Gianluca Gatto", role: "University of Cagliari, Italy" },
 ]
 
 export default function OrganizingCommitteePage() {
