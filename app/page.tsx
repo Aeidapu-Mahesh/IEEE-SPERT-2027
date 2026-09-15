@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import Navbar from "@/app/components/Navbar"
 import Footer from "@/app/components/Footer"
+import { AnnouncementTicker } from "@/app/components/AnnouncementTicker"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import VisitorCounter from "@/app/components/VisitorCounter"
@@ -117,6 +118,9 @@ export default function HomePage() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Navbar />
+      <div className="mt-3">
+        <AnnouncementTicker />
+      </div>
       <main className="flex-1">
         {/* Hero */}
         <section className="relative overflow-hidden">

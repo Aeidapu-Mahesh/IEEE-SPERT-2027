@@ -7,7 +7,6 @@ import { ChevronDown, Sun, Moon, Menu, X } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 import { LogoFull } from "@/app/components/Logo";
-import { AnnouncementTicker } from "@/app/components/AnnouncementTicker";
 
 type NavChild = { name: string; href: string };
 type NavItem = {
@@ -55,7 +54,6 @@ const Navbar = () => {
   const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
 
   return (
-    <>
     <nav className="sticky top-0 z-50 w-full border-b border-emerald-900/10 bg-white/85 backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/85">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center">
@@ -186,8 +184,6 @@ const Navbar = () => {
         </div>
       )}
     </nav>
-    <AnnouncementTicker />
-    </>
   );
 };
 
