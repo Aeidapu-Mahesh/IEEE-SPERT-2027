@@ -113,3 +113,17 @@
   animation: border-spin 3s linear infinite;
 }
 
+/* Seamless infinite ticker: content is duplicated once, track scrolls exactly one copy's width */
+@keyframes marquee-seamless {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-seamless {
+  animation: marquee-seamless 24s linear infinite;
+}
+

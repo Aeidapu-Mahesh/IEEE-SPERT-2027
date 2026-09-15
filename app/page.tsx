@@ -241,6 +241,39 @@ export default function HomePage() {
                   </span>
                 </div>
               </div>
+
+              <p className="mt-2 text-xs font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                Technically Co-Sponsored By
+              </p>
+              <div className="grid w-full grid-cols-3 gap-3">
+                <div className="flex h-[68px] items-center justify-center overflow-hidden rounded-2xl border border-white/60 bg-white/80 p-3 shadow-lg shadow-black/5 backdrop-blur-xl">
+                  <Image
+                    src="https://ias.ieee.org/wp-content/uploads/2025/08/EEE-IAS-Primary-Logo-White-RGB.png"
+                    alt="IEEE Industry Applications Society"
+                    width={400}
+                    height={111}
+                    className="max-h-full max-w-full object-contain invert"
+                  />
+                </div>
+                <div className="flex h-[68px] items-center justify-center overflow-hidden rounded-2xl border border-white/60 bg-white/80 p-3 shadow-lg shadow-black/5 backdrop-blur-xl">
+                  <Image
+                    src="https://www.ieee-pels.org/wp-content/uploads/2023/12/PELS-Logo.png"
+                    alt="IEEE Power Electronics Society"
+                    width={500}
+                    height={122}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
+                <div className="flex h-[68px] items-center justify-center overflow-hidden rounded-2xl border border-white/60 bg-white/80 p-3 shadow-lg shadow-black/5 backdrop-blur-xl">
+                  <Image
+                    src="/images/ieee-ies-logo.png"
+                    alt="IEEE Industrial Electronics Society"
+                    width={210}
+                    height={98}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
