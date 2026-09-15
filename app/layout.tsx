@@ -4,7 +4,6 @@ import { Inter } from "next/font/google"
 import type { Metadata } from "next"
 import { ThemeProvider } from "@/components/theme-provider"
 import { CursorGlow } from "@/components/CursorGlow"
-import { AnnouncementTicker } from "@/app/components/AnnouncementTicker"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -35,7 +34,6 @@ export default function RootLayout({
           enableSystem={false}
           disableTransitionOnChange
         >
-          <AnnouncementTicker />
           {children}
           <CursorGlow />
         </ThemeProvider>
