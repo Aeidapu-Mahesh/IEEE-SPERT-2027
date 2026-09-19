@@ -27,7 +27,7 @@ const honoraryChairs: Member[] = [
   { name: "Dr. Brij N. Singh", role: "IEEE Fellow, John Deere Fellow, Electrification R&D Manager in John Deere USA" },
   { name: "Prof. Sanjib Kumar Panda", role: "Department of Electrical Engineering, NUS" },
   { name: "Prof. Victor Veliadis", role: "IEEE Fellow, CTO of PowerAmerica and Professor at NC State University" },
-  { name: "Dr. Sanjeet Kumar Dwivedi", role: "Fellow IET, Senior Consultant, RDT Engineers, Denmark" },
+  { name: "Dr. Sanjeet Kumar Dwivedi", role: "Fellow IET, Sr. Consultant, Green Energy Denmark" },
 ]
 
 const generalChairs: Member[] = [
