@@ -388,7 +388,7 @@ export default function HomePage() {
                   <div>
                     <h3 className="font-semibold text-slate-900 dark:text-white">Special Sessions</h3>
                     <p className="text-sm text-slate-600 dark:text-slate-300">
-                      Proposals for special sessions will open soon — check back or get in touch.
+                      Special session proposals are now open — last date for submission: 30 September 2026.
                     </p>
                   </div>
                 </div>

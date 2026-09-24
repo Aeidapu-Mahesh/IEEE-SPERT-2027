@@ -13,7 +13,22 @@ export default function CallForSpecialSessionPage() {
             Special Sessions
           </h1>
 
-          {/* Special Sessions Section */}
+          {/* Call banner */}
+          <div className="mb-12 flex flex-col gap-1 rounded-lg border border-amber-400/40 bg-amber-400/10 p-5">
+            <div className="flex items-center gap-2">
+              <span className="relative flex size-2.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-amber-400 opacity-75" />
+                <span className="relative inline-flex size-2.5 rounded-full bg-amber-500" />
+              </span>
+              <span className="text-lg font-bold text-amber-400">Call for Special Session Proposals is open!</span>
+            </div>
+            <p className="text-white">
+              Last date for proposal submission: <strong>30 September 2026</strong>. Send proposals to{" "}
+              <a href="mailto:spert2027@gmail.com" className="font-semibold underline">spert2027@gmail.com</a>.
+            </p>
+          </div>
+
+          {/* Approved Special Sessions (SPERT 2025 list, hidden until the 2027 sessions are approved)
           <div className="mb-12">
             <h2 className="text-2xl font-bold mb-6 text-white">Approved Special Sessions</h2>
             <div className="space-y-8">
@@ -169,27 +184,28 @@ export default function CallForSpecialSessionPage() {
 
             </div>
           </div>
+          */}
 
           {/* Download Template Button */}
           <div className="mb-12">
             <Button asChild>
-              <Link 
-                href="/templates/SPERT 2025 - Special Session Proposal Template.docx"
+              <Link
+                href="/templates/SPERT 2027 - Special Session Proposal Template.docx"
                 download
                 className="bg-blue-600 hover:bg-blue-700 text-white"
               >
-                SPERT 2025 - Special Session Proposal Template
+                SPERT 2027 - Special Session Proposal Template
               </Link>
             </Button>
           </div>
 
           {/* Proposal Content Section */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-4 text-white">Dates: 22 Dec to 24 Dec 2025 | Venue: Sardar Vallabhbhai National Institute of Technology, Surat</h2>
+            <h2 className="text-2xl font-bold mb-4 text-white">Dates: 17 to 19 May 2027 | Venue: Sardar Vallabhbhai National Institute of Technology, Surat</h2>
             <p className="text-white mb-6">
             </p>
             <ul className="list-disc pl-5 text-white space-y-2">
-              <li>We are pleased to invite proposals for Special Sessions to be included in IEEE International Conference Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT) 2025, Sardar Vallabhbhai National Institute of Technology, Surat. The conference is organized by the Department of Electrical Engineering, and it aims to bring together leading researchers, academics, industry professionals, and practitioners from around the globe to share their latest research findings, innovations, and developments in the field of advanced energy systems, renewable energy sources, and sustainable transportation solutions.</li>
+              <li>We are pleased to invite proposals for Special Sessions to be included in IEEE International Conference Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT) 2027, Sardar Vallabhbhai National Institute of Technology, Surat. The conference is organized by the Department of Electrical Engineering, and it aims to bring together leading researchers, academics, industry professionals, and practitioners from around the globe to share their latest research findings, innovations, and developments in the field of advanced energy systems, renewable energy sources, and sustainable transportation solutions.</li>
               <li>Topics include smart grid technologies, energy storage, IoT applications in power systems, and the role of artificial intelligence in optimizing energy distribution. The conference also covers renewable energy advancements in solar, wind, and biofuels, alongside the evolution of electric and hybrid vehicles. It highlights sustainable mobility, smart transportation systems, and the environmental impacts of energy technologies.</li>
               <li>Special Sessions are an integral part of our conference program, offering the opportunity to focus on emerging, specialized, or interdisciplinary topics that may not be fully represented in the main conference tracks. They serve as a platform for experts to delve deeper into niche areas of interest, facilitate focused discussions, and promote future collaborations.</li>
             </ul>
@@ -240,10 +256,10 @@ export default function CallForSpecialSessionPage() {
               <span className="font-bold text-white">⏳ Important Dates: </span>
             </p>
             <ul className="list-disc pl-5 text-white space-y-2">
-              <li>Deadline for Special Session Proposals: 20-05-2025</li>
-              <li>Notification of Acceptance: 25-05-2025</li>
-              <li>Deadline for Special Session Paper Submissions: 31-07-2025</li>
-              <li>Conference Dates: 22 Dec to 24 Dec 2025</li>
+              <li>Deadline for Special Session Proposals: 30 September 2026</li>
+              <li>Notification of Acceptance: To be announced</li>
+              <li>Deadline for Special Session Paper Submissions: 30 November 2026</li>
+              <li>Conference Dates: 17 to 19 May 2027</li>
             </ul>
           </div>
 
