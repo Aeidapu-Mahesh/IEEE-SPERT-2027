@@ -187,6 +187,22 @@ export default function HomePage() {
                   </Button>
                 </div>
               </div>
+
+              <div className="mt-6 flex flex-col items-start gap-3">
+                <p className="text-sm font-medium text-slate-700 dark:text-slate-200">
+                  Interested in hosting a special session? Submit a proposal now.
+                </p>
+                <Button
+                  size="sm"
+                  variant="outline"
+                  asChild
+                  className="border-emerald-600/40 text-emerald-700 hover:bg-emerald-50 hover:text-emerald-800 dark:text-emerald-400 dark:hover:bg-white/5 dark:hover:text-emerald-300"
+                >
+                  <Link href="/program/call-for-special-session">
+                    Propose a Special Session <ArrowRight className="ml-1 size-4" />
+                  </Link>
+                </Button>
+              </div>
             </div>
 
             {/* Organizing institutions */}
