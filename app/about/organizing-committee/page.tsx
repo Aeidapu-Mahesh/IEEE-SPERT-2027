@@ -55,6 +55,7 @@ const financeChairs: Member[] = [
 ]
 
 const technicalProgramCommitteeChairs: Member[] = [
+  { name: "Prof. Varsha A. Shah", role: "DoEE, SVNIT, Surat" },
   { name: "Dr. Amit Ved", role: "Marwadi University, Rajkot" },
   { name: "Dr. Srinivas Bhaskar Karanki", role: "IEEE PELS Vice-Chair India-Pacific, IIT Bhubhaneshwar" },
   { name: "Dr. Tripura Pidikiti", role: "IEEE IES Hyderabad Hub Leader, RVR JC College of Engineering, Guntur" },
@@ -99,7 +100,6 @@ const tutorialAndWorkshopChairs: Member[] = [
 
 const instituteAdvisoryCommitteeChairs: Member[] = [
   { name: "Prof. S. N. Sharma", role: "DoEE, SVNIT, Surat" },
-  { name: "Prof. Varsha A. Shah", role: "DoEE, SVNIT, Surat" },
   { name: "Prof. H. R. Jariwala", role: "DoEE, SVNIT, Surat" },
   { name: "Dr. Rajasekharareddy Chilipi", role: "DoEE, SVNIT, Surat" },
 ]

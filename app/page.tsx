@@ -150,7 +150,7 @@ export default function HomePage() {
               <div className="mt-6 flex flex-wrap gap-3">
                 <div className="flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm ring-1 ring-slate-900/5 dark:bg-white/5 dark:text-slate-200 dark:ring-white/10">
                   <CalendarDays className="size-4 text-emerald-600" />
-                  17&ndash;19 May 2027
+                  07&ndash;09 June 2027
                 </div>
                 <div className="flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm ring-1 ring-slate-900/5 dark:bg-white/5 dark:text-slate-200 dark:ring-white/10">
                   <MapPin className="size-4 text-emerald-600" />
