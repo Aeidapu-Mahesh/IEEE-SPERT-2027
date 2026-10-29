@@ -202,7 +202,7 @@ export default function CallForSpecialSessionPage() {
 
           {/* Proposal Content Section */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Dates: 17 to 19 May 2027 | Venue: Sardar Vallabhbhai National Institute of Technology, Surat</h2>
+            <h2 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Dates: 7 to 9 June 2027 | Venue: Sardar Vallabhbhai National Institute of Technology, Surat</h2>
             <p className="text-slate-600 dark:text-slate-300 mb-6">
             </p>
             <ul className="list-disc pl-5 text-slate-600 dark:text-slate-300 space-y-2">
@@ -258,9 +258,9 @@ export default function CallForSpecialSessionPage() {
             </p>
             <ul className="list-disc pl-5 text-slate-600 dark:text-slate-300 space-y-2">
               <li>Deadline for Special Session Proposals: 30 September 2026</li>
-              <li>Notification of Acceptance: To be announced</li>
+              <li>Notification of Acceptance: 14 January 2027</li>
               <li>Deadline for Special Session Paper Submissions: 30 November 2026</li>
-              <li>Conference Dates: 17 to 19 May 2027</li>
+              <li>Conference Dates: 7 to 9 June 2027</li>
             </ul>
           </div>
 

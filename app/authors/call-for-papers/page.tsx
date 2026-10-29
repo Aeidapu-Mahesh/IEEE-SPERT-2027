@@ -18,7 +18,7 @@ export default function CallForPapersPage() {
             {/* Important Dates */}
             <div className="rounded-xl border border-emerald-600/20 bg-emerald-600/5 p-6 shadow-sm">
               <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-white">Important Dates</h2>
-              <ul className="grid gap-3 text-slate-700 sm:grid-cols-2 lg:grid-cols-5 dark:text-slate-200">
+              <ul className="grid gap-3 text-slate-700 sm:grid-cols-2 lg:grid-cols-4 dark:text-slate-200">
                 {importantDates.map(({ label, date }) => (
                   <li key={label} className="rounded-lg bg-white p-3 dark:bg-slate-900">
                     <span className="block text-xs uppercase tracking-wide text-slate-500 dark:text-slate-400">

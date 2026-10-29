@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "IEEE-SPERT 2027",
   description:
-    "IEEE International Conference on Smart Power, Energy, Renewables, and Transportation — 17-19 May 2027",
+    "IEEE International Conference on Smart Power, Energy, Renewables, and Transportation — 07-09 June 2027",
   icons: {
     icon: "/favicon.ico",
   },

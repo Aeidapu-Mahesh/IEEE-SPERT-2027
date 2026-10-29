@@ -30,7 +30,7 @@ import {
   Zap,
 } from "lucide-react"
 
-const CONFERENCE_START = "2027-05-17T09:00:00"
+const CONFERENCE_START = "2027-06-07T09:00:00"
 
 const trackIcons: Record<string, typeof Zap> = {
   T1: Network,
@@ -311,7 +311,7 @@ export default function HomePage() {
                   Full Call for Papers <ArrowRight className="size-4" />
                 </Link>
               </div>
-              <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+              <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {importantDates.map(({ label, date }) => (
                   <div key={label} className="rounded-xl bg-white p-4 shadow-sm dark:bg-slate-900">
                     <p className="text-xs font-medium uppercase tracking-wide text-slate-500 dark:text-slate-400">
@@ -420,7 +420,7 @@ export default function HomePage() {
         <section className="w-full bg-gradient-to-r from-emerald-700 to-emerald-600 py-14">
           <div className="container px-4 text-center md:px-6">
             <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">Conference Starts In</h2>
-            <p className="mt-2 text-sm text-emerald-100">17&ndash;19 May 2027 &middot; SVNIT, Surat, India</p>
+            <p className="mt-2 text-sm text-emerald-100">07&ndash;09 June 2027 &middot; SVNIT, Surat, India</p>
             <div className="mt-8">
               <CountdownTimer targetDate={CONFERENCE_START} />
             </div>
