@@ -125,7 +125,6 @@ const nationalAdvisoryCommitteeMembers: Member[] = [
 const internationalAdvisoryCommitteeMembers: Member[] = [
   { name: "Dr. Brij N. Singh", role: "IEEE Fellow, John Deere Fellow, Electrification R&D Manager in John Deere USA" },
   { name: "Prof. Victor Veliadis", role: "IEEE Fellow, CTO of PowerAmerica and Professor at NC State University" },
-  { name: "Prof. Akshay Rathore", role: "National University of Singapore" },
   { name: "Prof. Sanjib Kumar Panda", role: "IEEE Fellow, Department of Electrical Engineering, NUS" },
   { name: "Jiaxing Lei", role: "School of Electrical Engineering, Southeast University, China" },
   { name: "Prof. Akhtar Kalam", role: "Victoria University, Melbourne, Victoria 8001 Australia" },
