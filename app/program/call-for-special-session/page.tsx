@@ -29,163 +29,110 @@ export default function CallForSpecialSessionPage() {
             </p>
           </div>
 
-          {/* Approved Special Sessions (SPERT 2025 list, hidden until the 2027 sessions are approved)
+          {/* Approved Special Sessions */}
           <div className="mb-12">
             <h2 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white">Approved Special Sessions</h2>
             <div className="space-y-8">
               <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
-                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS1: Advanced Control and Optimization of DC-DC Converters for Smart and Sustainable Energy Systems</h3>
+                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS1: Emerging Technologies in Clean Energy Vehicles and Sustainable Mobility</h3>
                 <p className="text-slate-600 dark:text-slate-300">
                   <strong>Organizers:</strong><br />
-                  1. Dr. Vanjari Venkata Ramana, Assistant Professor, Department of Electrical Engineering, Delhi Technological University, Delhi<br />
-                  2. Dr. D.G. Abhilash Krishna, Assistant Professor, Department of Electrical and Electronics Engineering, RV College of Engineering, Bengaluru
+                  1. Dr. Himanshu Sharma, Associate Professor, Vivekananda Institute of Professional Studies<br />
+                  2. Dr. Krishan Arora, Associate Professor, Lovely Professional University, Punjab<br />
+                  3. Dr. Akhil Gupta, Associate Professor, Symbiosis Institute of Technology, Nagpur
                 </p>
               </div>
 
               <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
-                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS2: Solar Energy Solutions for Renewable Integration and Electric Mobility</h3>
+                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS2: Advanced Power Electronic Converters and AI for Renewable-Integrated Smart Grids</h3>
                 <p className="text-slate-600 dark:text-slate-300">
                   <strong>Organizers:</strong><br />
-                  1. Dr. Chinmaya K A, Assistant Professor, Department of Electrical Engineering IIT (BHU), Varanasi, India<br />
-                  2. Dr. Dileep. G, Assistant Professor, Department of Electrical and Electronics Engineering Jigme Namgyel Engineering College, Dewathang, Bhutan<br />
-                  3. Dr. Sukriti Tiwari, Assistant Professor, National Institute of Technology Calicut (NITC), Kerala, India
+                  1. Dr. Ravi Eswar K M, Assistant Professor, Department of Electrical and Electronics Engineering, SRM Institute of Science and Technology-Kattankulathur<br />
+                  2. Dr. Konduru Sudharshan, Assistant Professor, Electrical Engineering Department, Parul University, Vadodara<br />
+                  3. Dr. Ramanjaneya Reddy, Associate Professor, Department of Electrical and Electronics Engineering, SRM University-AP
                 </p>
               </div>
 
               <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
-                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS3: Intelligent Forecasting Techniques for Smart Energy and Transportation Systems using Machine Learning and Hybrid Deep Learning Models</h3>
+                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS3: Intelligent Monitoring, Diagnostics, and Protection of Power Assets in Renewable-Integrated Microgrids</h3>
                 <p className="text-slate-600 dark:text-slate-300">
                   <strong>Organizers:</strong><br />
-                  1. Madderla Chiranjeevi, Assistant Professor, School of Computer Science and Artificial Intelligence, SR University, Warangal, India<br />
-                  2. Dr. Tukaram Moger, Associate Professor, Department of Electrical and Electronics Engineering, NITK Surathkal, Mangalore, India<br />
-                  3. Dr. Debashisha Jena, Professor, Department of Electrical and Electronics Engineering, NITK Surathkal, Mangalore, India
+                  1. Dr. Debayan Sarkar, Assistant Professor, EED, NIT Silchar<br />
+                  2. Dr. Biswajit Sahoo, Assistant Professor, EED, NIT Silchar<br />
+                  3. Dr. Rajasi Mandal, Assistant Professor, EEE, SSN College of Engineering, Chennai<br />
+                  4. Dr. Subhendu Sekhar Sahoo, Associate Professor, VIT Chennai
                 </p>
               </div>
 
               <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
-                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS4: Smart Mobility: Integration of AI, Batteries and Charging Systems for EVs</h3>
+                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS4: Advanced Power Electronic Converters and Intelligent Energy Management for Sustainable Electric Mobility</h3>
                 <p className="text-slate-600 dark:text-slate-300">
                   <strong>Organizers:</strong><br />
-                  1. Hareesh Myneni, Assistant Professor, Department of Electrical Engineering, NIT Srinagar, Jammu & Kashmir, India<br />
-                  2. Dr. D. V. Siva krishna Rao, Assistant Professor, Department of Electrical Engineering, NIT Trichy
+                  1. Dr. M. Jagabar Sathik, Associate Research Professor, Department of Electrical Engineering, Prince Mohammad Bin Fahd University (PMU)<br />
+                  2. Dr. Prabhakaran K, Department of Electrical Engineering, Maulana Azad National Institute of Technology (MANIT), Bhopal<br />
+                  3. Dr. B. Venkatesa Perumal, Professor, Department of Electrical and Electronics Engineering, NIT Surathkal<br />
+                  4. Dr. Samir El-Nakla, Chair, Department of Electrical Engineering, Prince Mohammad Bin Fahd University
                 </p>
               </div>
 
               <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
-                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS5: Advanced Power Converters and Control Techniques for Renewable Energy Systems</h3>
+                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS5: Quantum Computing Applications in Power Systems</h3>
                 <p className="text-slate-600 dark:text-slate-300">
                   <strong>Organizers:</strong><br />
-                  1. Dr. Ravi Eswar K M, Assistant Professor, Department of Electrical and Electronics Engineering, SRM Institute of Science and Technology, Chennai, India<br />
-                  2. Dr. Phani Teja Bankupalli, Assistant Professor, Department of Electrical and Electronics Engineering, SRM Institute of Science and Technology, Chennai, India
+                  1. Dr. Jigneshkumar P. Desai, Associate Professor, Department of Robotics and Automation Engineering, Parul University<br />
+                  2. Dr. Prakruti Shah, Head, Department of Electrical & Electronics Engineering, Navrachana University, Vadodara
                 </p>
               </div>
 
               <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
-                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS6: Applications of Machine-Learning in Energy Systems</h3>
+                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS6: Cyber-Physical Systems for Intelligent Power Electronics, Electric Vehicle Charging, and Smart Energy Systems</h3>
                 <p className="text-slate-600 dark:text-slate-300">
                   <strong>Organizers:</strong><br />
-                  1. Dr. Sandeep Kakran, Assistant Professor Gr. 1, Electrical Engineering Department, NIT Kurukshetra<br />
-                  2. Dr. Pradeep Kumar, Assistant Professor Gr. 1, Electrical Engineering Department, NIT Kurukshetra<br />
-                  3. Dr. Rajesh Kumar, Assistant Professor Gr. 1, Electrical Engineering Department, NIT Kurukshetra
+                  1. Dr. Praveen Kumar Bonthagorla, Assistant Professor, School of Electrical Engineering, Manipal Institute of Technology<br />
+                  2. Dr. A. S. Veerendra, Associate Professor, Electrical and Electronics Engineering Department, Manipal Institute of Technology<br />
+                  3. Dr. Suresh Mikkili, Associate Professor, Electrical and Electronics Engineering, National Institute of Technology Goa
                 </p>
               </div>
 
               <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
-                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS7: Integration of Smart Agriculture and Energy for Empowering Rural India</h3>
+                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS7: Multilevel Inverters: Advanced Topologies, Modulation Strategies for Medium and High-Power Applications</h3>
                 <p className="text-slate-600 dark:text-slate-300">
                   <strong>Organizers:</strong><br />
-                  1. Dr. Sonali Paunikar, Professor & Head, Department of Electrical and Electronics Engineering, IES College of Technology, Bhopal<br />
-                  2. Dr. N P Patidar, Professor, Department of Electrical Engineering, MANIT Bhopal<br />
-                  3. Prof. Mohan Lal Kolhe, Professor in Smart Grid & Renewable Energy, Faculty of Engineering & Science, University of Agder (Norway) <br />
-                  4. Prof. Varsha A Shah, Professor, Department of Electrical Engineering, SVNIT Surat
+                  1. Dr. Yellasari Suresh, NIT Surathkal<br />
+                  2. Dr. Ravi Raushan, NIT Surathkal<br />
+                  3. Dr. C. Dhanamjayalu, VIT Vellore, Tamil Nadu
                 </p>
               </div>
 
               <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
-                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS8: Innovation in Renewable and Power Converters: Quest for a more sustainable energy and e-mobility</h3>
+                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS8: Advances in Smart Grids for Sustainable Energy Systems and Electric Mobility</h3>
                 <p className="text-slate-600 dark:text-slate-300">
                   <strong>Organizers:</strong><br />
-                  1. Dr. Soumyabrata Barik, Assistant Professor, Department of Electrical Engineering, IIT (ISM) Dhanbad<br />
-                  2. Dr. Sukanta Halder, Assistant Professor, Department of Electrical Engineering, IIT (ISM) Dhanbad, Jharkhand, India<br />
-                  3. Dr. Sudarshan Swain, Assistant Professor, Department of Electrical and Electronics Engineering, BITS Pilani, K.K. Birla Goa Campus<br />
-                  4. Dr. Subhadeep Paladhi, Assistant Professor, Department of Electrical Engineering, IIT Indore
+                  1. Dr. V. B. Murali Krishna, NIT Andhra Pradesh<br />
+                  2. Dr. P. Rama Krishna, Dr B R Ambedkar NIT Jalandhar
                 </p>
               </div>
 
               <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
-                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS9: Wide Band Gap devices-based converters for renewable and transportation applications</h3>
+                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS9: Physics-Informed and Generative AI for Integrated Renewable Energy and Electric Mobility: From Solar Forecasting to Battery Intelligence</h3>
                 <p className="text-slate-600 dark:text-slate-300">
                   <strong>Organizers:</strong><br />
-                  1. Dr Lalit Kumar Sahu, Assistant Professor, Department of Electrical Engineering, IIT Bhilai<br />
-                  2. Dr A Hemachander, Assistant Professor, Department of Electrical and Electronics Engineering, NIT Puducherry<br />
-                  3. Mr P Praneeth Kumar, Lead, BMS Project, Senior Hardware Engineer, Samarth E-Mobility Pvt. Ltd.
+                  1. Dr. Madderla Chiranjeevi, Assistant Professor, Computer Science and Engineering, RV University, Bengaluru<br />
+                  2. Dr. Priya Nandihal, Associate Professor, Computer Science and Engineering, RV University, Bengaluru<br />
+                  3. Dr. Shyam Mohan J S, Associate Professor, Computer Science and Engineering, RV University, Bengaluru
                 </p>
               </div>
 
               <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
-                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS10: Multilevel Inverters: Advanced Topologies, Modulation Strategies for medium and high-power Applications</h3>
+                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS10: Advanced Control, Reliability and Optimization of Power Electronic Systems</h3>
                 <p className="text-slate-600 dark:text-slate-300">
                   <strong>Organizers:</strong><br />
-                  1. Dr. Y Suresh, NITK Surathkal, Karnataka, India<br />
-                  2. Dr. Ravi Raushan, NITK Surathkal, Karnataka, India<br />
-                  3. Dr. C Dhanamjayulu, VIT Vellore, Tamilnadu, India
+                  1. Dr. V. Venkata Ramana, Delhi Technological University, Delhi<br />
+                  2. Dr. Vivekanandan, EED, NIT Silchar
                 </p>
               </div>
-
-              <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
-                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS11: Thermal Runaway Characterization, Management Strategies and Safety Mechanisms in EV Battery Packs</h3>
-                <p className="text-slate-600 dark:text-slate-300">
-                  <strong>Organizers:</strong><br />
-                  1. Dr. Anubhav Agrawal, Associate Professor, School of Engineering and Technology, BML Munjal University<br />
-                  2. Dr. Aneesh Prabhakar, Assistant Professor, Centre for Energy and Environment, Malaviya National Institute of Technology Jaipur<br />
-                  3. Dr. Rojo Kurian Daniels, Assistant Professor, School of Engineering and Technology, BML Munjal University.
-                </p>
-              </div>
-
-              <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
-                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS12: Flexible and Self-Powered Nanogenerator-Integrated Systems for Smart Energy and Sustainable Electronics</h3>
-                <p className="text-slate-600 dark:text-slate-300">
-                  <strong>Organizers:</strong><br />
-                  1. Dr. Deepak Puneta, Assistant Professor, Depatment of Electronics and Communication Engineering, MNNIT Allahabad<br />
-                  2. Dr. Anand Sharma, Assistant Professor, Depatment of Electronics and Communication Engineering, MNNIT Allahabad<br />
-                  3. Dr. Satish Chandra, Assistant Professor, Depatment of Electronics and Communication Engineering, MNNIT Allahabad
-                </p>
-              </div>
-
-              <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
-                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS13: Green Intelligence: Advanced Materials and AI-Driven Approaches for Smart and Resilient Energy Infrastructure</h3>
-                <p className="text-slate-600 dark:text-slate-300">
-                  <strong>Organizers:</strong><br />
-                  1. Dr. Sudhakar Jyothula, Principal, Vignan's Institute of Information Technology (VIIT), Visakhapatnam, Andhra Pradesh<br />
-                  2. Dr. Pratap Kumar Dakua, Sr. Associate Professor, ECE Department, Vignan's Institute of Information Technology (VIIT), Visakhapatnam, Andhra Pradesh <br />
-                  3. Dr. Subheundu Sekhar Sahoo, Associate Professor, EEE Department, Vignan's Institute of Information Technology (VIIT), Visakhapatnam, Andhra Pradesh
-                </p>
-              </div>
-
-              <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
-                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS14: Cybersecurity and Resilience of Smart Power and Renewable Energy Systems </h3>
-                <p className="text-slate-600 dark:text-slate-300">
-                  <strong>Organizers:</strong><br />
-                  1. Dr. Saurav Verma, Assistant Professor, MPSTME, NMIMS University, Mumbai <br />
-                  2. Dr. Ashwini Rao, Associate Professor, MPSTME, NMIMS University, Mumbai <br />
-                  3. Dr. Vikram Kulkarni, Associate Professor, MPSTME, NMIMS University, Mumbai <br />
-                  4. Dr. Chetana Prakash, Professor, BIET, Davanagere, VTU, Karnataka
-                </p>
-              </div>
-
-              <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
-                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS15: AI-Driven Predictive Maintenance and Fault Detection in Power and EV Systems</h3>
-                <p className="text-slate-600 dark:text-slate-300">
-                  <strong>Organizers:</strong><br />
-                  1. Dr. Himanshu Sharma, Dean R&D, G.H. Raisoni College of Engineering and Management, Nagpur <br />
-                  2. Dr. Krishan Arora, Professor, School of Electronics and Electrical Engineering, Lovely Professional University<br />
-                  3. Dr. Akhil Gupta, Associate Professor, Symbiosis Institute of Technology, Nagpur <br />
-                </p>
-              </div>
-
             </div>
           </div>
-          */}
 
           {/* Download Template Button */}
           <div className="mb-12">
