@@ -30,6 +30,7 @@ const navItems: NavItem[] = [
     href: "/authors",
     children: [
       { name: "Call for Papers", href: "/authors/call-for-papers" },
+      { name: "Special Sessions", href: "/program/call-for-special-session" },
     ],
   },
   {
