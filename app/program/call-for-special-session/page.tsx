@@ -258,8 +258,8 @@ export default function CallForSpecialSessionPage() {
             </p>
             <ul className="list-disc pl-5 text-slate-600 dark:text-slate-300 space-y-2">
               <li>Deadline for Special Session Proposals: 30 September 2026</li>
-              <li>Notification of Acceptance: 14 January 2027</li>
-              <li>Deadline for Special Session Paper Submissions: 30 November 2026</li>
+              <li>Deadline for Special Session Paper Submissions: 15 December 2026</li>
+              <li>Notification of Acceptance: 15 February 2027</li>
               <li>Conference Dates: 7 to 9 June 2027</li>
             </ul>
           </div>
