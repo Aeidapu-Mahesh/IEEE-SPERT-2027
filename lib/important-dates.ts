@@ -4,6 +4,7 @@ export const importantDates = [
   { label: "Registration Opens", date: "15 January 2027" },
   { label: "Notification of Acceptance", date: "15 February 2027" },
   { label: "Camera-Ready Submission Begins", date: "16 February 2027" },
-  { label: "Early-Bird Registration Deadline", date: "16 February – 15 March 2027" },
+  { label: "Early-Bird Registration", date: "16 February – 15 March 2027" },
+  { label: "Regular Registration Begins", date: "16 March 2027" },
   { label: "Registration Closes", date: "1 May 2027" },
 ]
