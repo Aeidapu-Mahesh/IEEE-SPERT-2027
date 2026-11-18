@@ -10,50 +10,58 @@ export default function SponsorshipsPage() {
       <Navbar />
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-8 text-center text-white">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-4 text-center text-white">
             Sponsorship Opportunities
           </h1>
+          <p className="text-center text-gray-300 mb-2">7–9 June 2027 | SVNIT, Surat, Gujarat, India</p>
+          <p className="text-center text-gray-400 text-sm mb-12">
+            Organized by the Department of Electrical Engineering, SVNIT Surat, in association with the University of Cagliari, Italy
+          </p>
 
           {/* Sponsorship Categories */}
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mb-16">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mb-4">
             {[
               {
                 title: "Diamond",
                 amount: "₹5 Lakhs",
                 benefits: [
-                  "5 Free Registrations",
-                  "Exhibition Stall",
-                  "90 Sec Video Ad",
-                  "Logo on banners",
-                  "Industry Session"
+                  "5 Complimentary Registrations",
+                  "Exhibition Space: 4 m × 3 m",
+                  "Logo on Website, Banners & Programme Booklet",
+                  "Recognition at Inaugural Ceremony",
+                  "Advertisement in Conference Kit / Bag",
+                  "Dedicated Industry Technology Session"
                 ]
               },
               {
                 title: "Platinum",
                 amount: "₹3 Lakhs",
                 benefits: [
-                  "3 Free Registrations",
-                  "Exhibition Stall",
-                  "Logo on banners",
-                  "Industry Session"
+                  "3 Complimentary Registrations",
+                  "Exhibition Space: 4 m × 2 m",
+                  "Logo on Website, Banners & Programme Booklet",
+                  "Recognition at Inaugural Ceremony",
+                  "Advertisement in Conference Kit / Bag"
                 ]
               },
               {
                 title: "Gold",
                 amount: "₹2 Lakhs",
                 benefits: [
-                  "2 Free Registrations",
-                  "Exhibition Stall",
-                  "Logo on banners"
+                  "2 Complimentary Registrations",
+                  "Exhibition Space: 3 m × 2 m",
+                  "Logo on Website, Banners & Programme Booklet",
+                  "Recognition at Inaugural Ceremony"
                 ]
               },
               {
                 title: "Silver",
                 amount: "₹1 Lakh",
                 benefits: [
-                  "1 Free Registration",
-                  "Exhibition Stall",
-                  "Logo on banners"
+                  "1 Complimentary Registration",
+                  "Exhibition Space: 2 m × 2 m",
+                  "Logo on Website, Banners & Programme Booklet",
+                  "Recognition at Inaugural Ceremony"
                 ]
               }
             ].map((tier, index) => (
@@ -75,6 +83,9 @@ export default function SponsorshipsPage() {
               </div>
             ))}
           </div>
+          <p className="text-center text-gray-400 text-xs mb-16">
+            All sponsorship amounts are in Indian Rupees (INR) and are exclusive of applicable GST.
+          </p>
 
           {/* Current Sponsors Section */}
           <div className="mb-16">
@@ -114,25 +125,28 @@ export default function SponsorshipsPage() {
           {/* Call to Action Section */}
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 text-center">
             <h2 className="text-2xl font-bold mb-6">Interested in Becoming a Sponsor?</h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-              Join us in shaping the future of smart power, energy, renewables, and transportation. 
+            <p className="text-gray-600 dark:text-gray-300 mb-2 max-w-2xl mx-auto">
+              Join us in shaping the future of smart power, energy, renewables, and transportation.
               Your support will help foster innovation and collaboration in these critical sectors.
             </p>
+            <p className="text-gray-600 dark:text-gray-300 mb-8">
+              For sponsorship enquiries: <a href="mailto:spert2027@gmail.com" className="text-primary underline">spert2027@gmail.com</a>
+            </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button 
+              <Button
                 asChild
-                size="lg" 
+                size="lg"
                 className="flex items-center gap-2"
               >
-                <Link href="https://drive.google.com/file/d/1ae65cS9ZIFQDEYZF6i7qwZemPxZXj7dS/view?usp=sharing" target="_blank">
+                <Link href="/templates/SPERT 2027 - Sponsorship Brochure.pdf" target="_blank">
                   <FileText className="w-5 h-5" />
                   Download Sponsorship Brochure
                 </Link>
               </Button>
-              <Button 
+              <Button
                 asChild
-                size="lg" 
-                variant="outline" 
+                size="lg"
+                variant="outline"
                 className="flex items-center gap-2"
               >
                 <Link href="https://forms.gle/388gDTyLm746KNqQ8" target="_blank">
