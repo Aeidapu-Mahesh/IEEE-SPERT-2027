@@ -87,41 +87,6 @@ export default function SponsorshipsPage() {
             All sponsorship amounts are in Indian Rupees (INR) and are exclusive of applicable GST.
           </p>
 
-          {/* Current Sponsors Section */}
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-8 text-center text-white">Our Current Sponsors</h2>
-            <div className="grid gap-8 md:grid-cols-2">
-              {/* Platinum Sponsors */}
-              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-                <h3 className="text-xl font-bold mb-4 text-primary">Platinum Sponsors</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="text-lg font-semibold">Raj Vijtech Private Limited</p>
-                      <p className="text-gray-600 dark:text-gray-300">Surat</p>
-                    </div>
-                    <img 
-                      src="https://media.licdn.com/dms/image/v2/C4E0BAQEsSp-2XgoE-A/company-logo_200_200/company-logo_200_200/0/1630563919132?e=1750291200&v=beta&t=3IMFR0YkkSynwEkgSlZjuo1PFvkMDfgQOAHhfaG_W0k"
-                      alt="Raj Vijtech Logo"
-                      className="h-16 w-16 object-contain"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Silver Sponsors */}
-              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-                <h3 className="text-xl font-bold mb-4 text-primary">Silver Sponsors</h3>
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-lg font-semibold">TechSunBio Private Limited</p>
-                    <p className="text-gray-600 dark:text-gray-300">Surat</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Call to Action Section */}
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 text-center">
             <h2 className="text-2xl font-bold mb-6">Interested in Becoming a Sponsor?</h2>
