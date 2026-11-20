@@ -6,6 +6,7 @@ import Image from "next/image"
 import Navbar from "@/app/components/Navbar"
 import Footer from "@/app/components/Footer"
 import { AnnouncementTicker } from "@/app/components/AnnouncementTicker"
+import { FadeIn } from "@/app/components/FadeIn"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import VisitorCounter from "@/app/components/VisitorCounter"
@@ -128,7 +129,7 @@ export default function HomePage() {
           <div className="absolute -right-24 -top-24 -z-10 h-[28rem] w-[28rem] rounded-full bg-lime-300/30 blur-3xl dark:bg-lime-500/10" />
           <div className="absolute -left-32 top-40 -z-10 h-[24rem] w-[24rem] rounded-full bg-emerald-300/30 blur-3xl dark:bg-emerald-500/10" />
 
-          <div className="container grid gap-12 px-4 py-16 md:px-6 md:py-24 lg:grid-cols-2 lg:items-center lg:py-28">
+          <FadeIn className="container grid gap-12 px-4 py-16 md:px-6 md:py-24 lg:grid-cols-2 lg:items-center lg:py-28">
             <div>
               <p className="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl dark:text-white">
                 IEEE SPERT 2027
@@ -295,12 +296,12 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-          </div>
+          </FadeIn>
         </section>
 
         {/* Important dates */}
         <section className="w-full py-12">
-          <div className="container px-4 md:px-6">
+          <FadeIn className="container px-4 md:px-6">
             <div className="rounded-2xl border border-emerald-600/20 bg-emerald-600/5 p-6 md:p-8">
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <h2 className="text-xl font-bold text-slate-900 sm:text-2xl dark:text-white">Important Dates</h2>
@@ -322,12 +323,12 @@ export default function HomePage() {
                 ))}
               </div>
             </div>
-          </div>
+          </FadeIn>
         </section>
 
         {/* Why attend */}
         <section className="w-full py-16 md:py-24">
-          <div className="container px-4 md:px-6">
+          <FadeIn className="container px-4 md:px-6">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
                 Why IEEE-SPERT
@@ -350,12 +351,12 @@ export default function HomePage() {
                 </Card>
               ))}
             </div>
-          </div>
+          </FadeIn>
         </section>
 
         {/* Focus areas / tracks */}
         <section className="w-full bg-emerald-50/60 py-16 md:py-24 dark:bg-white/[0.03]">
-          <div className="container px-4 md:px-6">
+          <FadeIn className="container px-4 md:px-6">
             <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
@@ -413,23 +414,23 @@ export default function HomePage() {
                 </Button>
               </CardContent>
             </Card>
-          </div>
+          </FadeIn>
         </section>
 
         {/* Countdown */}
         <section className="w-full bg-gradient-to-r from-emerald-700 to-emerald-600 py-14">
-          <div className="container px-4 text-center md:px-6">
+          <FadeIn className="container px-4 text-center md:px-6">
             <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">Conference Starts In</h2>
             <p className="mt-2 text-sm text-emerald-100">07&ndash;09 June 2027 &middot; SVNIT, Surat, India</p>
             <div className="mt-8">
               <CountdownTimer targetDate={CONFERENCE_START} />
             </div>
-          </div>
+          </FadeIn>
         </section>
 
         {/* Glimpses from 2025 */}
         <section className="w-full py-16 md:py-24">
-          <div className="container px-4 md:px-6">
+          <FadeIn className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
               Glimpses from IEEE-SPERT 2025
             </h2>
@@ -446,7 +447,7 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-          </div>
+          </FadeIn>
         </section>
 
         {/* Organizing institutions — commented out: redundant with the "Organized By" panel in the hero
@@ -506,7 +507,7 @@ export default function HomePage() {
 
         {/* Sponsor CTA */}
         <section className="w-full py-16 md:py-24">
-          <div className="container px-4 md:px-6">
+          <FadeIn className="container px-4 md:px-6">
             <Card className="overflow-hidden border-none bg-gradient-to-r from-emerald-700 to-emerald-600">
               <CardContent className="flex flex-col items-start gap-6 p-8 sm:flex-row sm:items-center sm:justify-between md:p-12">
                 <div>
@@ -523,7 +524,7 @@ export default function HomePage() {
                 </Button>
               </CardContent>
             </Card>
-          </div>
+          </FadeIn>
         </section>
       </main>
       <VisitorCounter />
