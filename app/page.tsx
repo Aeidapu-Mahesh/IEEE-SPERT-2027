@@ -129,7 +129,7 @@ export default function HomePage() {
           <div className="absolute -right-24 -top-24 -z-10 h-[28rem] w-[28rem] rounded-full bg-lime-300/30 blur-3xl dark:bg-lime-500/10" />
           <div className="absolute -left-32 top-40 -z-10 h-[24rem] w-[24rem] rounded-full bg-emerald-300/30 blur-3xl dark:bg-emerald-500/10" />
 
-          <FadeIn className="container grid gap-12 px-4 pt-8 pb-16 md:px-6 md:pt-12 md:pb-24 lg:grid-cols-2 lg:items-start lg:pt-14 lg:pb-28">
+          <FadeIn className="container grid gap-12 px-4 pt-4 pb-16 md:px-6 md:pt-8 md:pb-24 lg:grid-cols-2 lg:items-start lg:pt-6 lg:pb-28">
             <div>
               <p className="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl dark:text-white">
                 IEEE SPERT 2027
