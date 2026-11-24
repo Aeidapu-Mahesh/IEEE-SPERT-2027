@@ -69,6 +69,7 @@ export default function RegistrationPage() {
   <ul className="list-disc list-outside pl-6 space-y-2 text-gray-700 dark:text-gray-300">
     <li>For registration affiliation of the author would be the basis for Indian or Foreign author, the authors are requested to register accordingly. Any amount paid in other than actual category will not be refunded.</li>
     <li>At least one Author must register in any applicable category before the deadline and present the paper during the conference for the paper to be included in IEEE Xplore.</li>
+    <li>Maximum page limit is six (6).</li>
     <li>Registration fees are non-refundable.</li>
   </ul>
 
