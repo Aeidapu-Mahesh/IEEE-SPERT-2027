@@ -99,11 +99,9 @@ const Navbar = () => {
                 <Link
                   href={item.href}
                   className={`text-sm font-medium transition-colors ${
-                    item.name === "Registration"
-                      ? "rounded-full bg-emerald-600 px-4 py-1.5 text-white hover:bg-emerald-700"
-                      : item.isImportant
-                        ? "rounded-full border border-amber-500/40 bg-amber-500/10 px-3 py-1.5 text-amber-700 hover:border-amber-500/70 hover:bg-amber-500/20 dark:text-amber-400"
-                        : "text-slate-700 hover:text-emerald-700 dark:text-slate-200 dark:hover:text-emerald-400"
+                    item.isImportant
+                      ? "rounded-full border border-amber-500/40 bg-amber-500/10 px-3 py-1.5 text-amber-700 hover:border-amber-500/70 hover:bg-amber-500/20 dark:text-amber-400"
+                      : "text-slate-700 hover:text-emerald-700 dark:text-slate-200 dark:hover:text-emerald-400"
                   }`}
                 >
                   {item.name}
@@ -163,11 +161,9 @@ const Navbar = () => {
                     href={item.href}
                     onClick={() => setIsOpen(false)}
                     className={`block rounded-md px-2 py-2.5 text-sm font-medium ${
-                      item.name === "Registration"
-                        ? "text-emerald-700 dark:text-emerald-400"
-                        : item.isImportant
-                          ? "text-amber-700 dark:text-amber-400"
-                          : "text-slate-700 hover:bg-emerald-50 dark:text-slate-200 dark:hover:bg-white/5"
+                      item.isImportant
+                        ? "text-amber-700 dark:text-amber-400"
+                        : "text-slate-700 hover:bg-emerald-50 dark:text-slate-200 dark:hover:bg-white/5"
                     }`}
                   >
                     {item.name}
