@@ -1,33 +1,32 @@
 import Navbar from "@/app/components/Navbar"
 import Footer from "@/app/components/Footer"
 import { Card, CardContent } from "@/components/ui/card"
-import Image from "next/image"
 
-export default function SubmissionAndRegistrationPage() {
+export default function RegistrationPage() {
   return (
     <main className="flex-1">
       <Navbar />
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-8 text-center text-white">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-8 text-center text-slate-900 dark:text-white">
             Registration Details
           </h1>
-          
+
           <Card className="mb-8">
             <CardContent className="p-6">
 <section className="w-full py-12 bg-white dark:bg-gray-900">
   <div className="container px-4 md:px-6">
-    <h2 className="text-3xl font-bold text-center mb-6 text-primary">Registration Fees</h2>
+    <h2 className="text-3xl font-bold text-center mb-2 text-primary">Registration Fees</h2>
     <p className="text-center text-gray-600 dark:text-gray-300 mb-8">
-      Prices are inclusive of 18% GST. Payment Gateway charges, currency conversion, or any bank charges are extra.
+      Conference dates: 7&ndash;9 June 2027 | SVNIT, Surat, Gujarat, India
     </p>
     <div className="overflow-auto rounded-lg shadow border dark:border-gray-700">
       <table className="min-w-full text-sm text-center text-gray-800 dark:text-gray-200">
         <thead className="bg-primary text-white">
           <tr>
             <th rowSpan={2} className="px-4 py-3 border">Category</th>
-            <th colSpan={2} className="px-4 py-3 border">Early Bird<br /><span className="text-xs">(Upto 15 Nov, 2025)</span></th>
-            <th colSpan={2} className="px-4 py-3 border">Standard<br /><span className="text-xs">(From 16th Nov, 2025)</span></th>
+            <th colSpan={2} className="px-4 py-3 border">Early Bird<br /><span className="text-xs">(16 Feb &ndash; 15 Mar 2027)</span></th>
+            <th colSpan={2} className="px-4 py-3 border">Standard<br /><span className="text-xs">(From 16 Mar 2027)</span></th>
           </tr>
           <tr className="bg-primary/90">
             <th className="px-4 py-2 border">IEEE Members</th>
@@ -38,15 +37,14 @@ export default function SubmissionAndRegistrationPage() {
         </thead>
         <tbody>
           {[
-            ["Indian Author - Academia/Industry (1 Paper)", "₹9,440", "₹11,800", "₹11,800", "₹14,160"],
-            ["Indian Author - Academia/Industry (2 Papers)", "₹11,800", "₹14,160", "₹14,160", "₹16,520"],
-            ["Attendee Indian", "₹7,080", "₹9,440", "₹9,440", "₹11,800"],
-            ["Indian Student Author (1 Paper)", "₹6,608", "₹8,260", "₹8,260", "₹10,620"],
-            ["Student Attendee - Indian", "₹2,950", "₹4,130", "₹2,950", "₹4,130"],
-            ["Foreign Author - Academia/Industry (1 Paper)", "$354", "$413", "$413", "$472"],
-            ["Foreign Attendee", "$236", "$295", "$295", "$354"],
-            ["Foreign Student Author (1 Paper)", "$236", "$295", "$295", "$354"],
-            ["Foreign Student Attendee", "$177", "$236", "$236", "$295"],
+            ["Indian Author - Academia/Industry (1 Paper)", "₹10,800", "₹13,500", "₹13,600", "₹17,000"],
+            ["Indian Author - Academia/Industry (2 Papers)", "₹13,200", "₹16,500", "₹16,500", "₹20,600"],
+            ["Attendee Indian", "₹8,000", "₹10,000", "₹11,200", "₹14,000"],
+            ["Indian Student Author (1 Paper)", "₹7,600", "₹9,500", "₹10,000", "₹12,500"],
+            ["Student Attendee - Indian", "₹4,800", "₹6,000", "₹6,400", "₹8,000"],
+            ["Foreign Author - Academia/Industry (1 Paper)", "$320", "$400", "$400", "$500"],
+            ["Foreign Author - Academia/Industry (2 Papers)", "$400", "$500", "$500", "$625"],
+            ["Foreign Student Author (1 Paper)", "$180", "$225", "$200", "$250"],
           ].map((row, idx) => (
             <tr key={idx} className={idx % 2 === 0 ? "bg-gray-100 dark:bg-gray-800" : "bg-white dark:bg-gray-900"}>
               {row.map((cell, i) => (
@@ -57,6 +55,12 @@ export default function SubmissionAndRegistrationPage() {
         </tbody>
       </table>
     </div>
+    <ul className="mt-6 list-disc list-outside pl-6 space-y-1 text-sm text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+      <li>All registration fees are inclusive of 18% GST.</li>
+      <li>5% additional discount to IES Members.</li>
+      <li>Payment gateway charges, currency conversion charges, and bank charges, if any, are additional.</li>
+      <li>Registration includes the applicable conference participation benefits as specified by the Organizing Committee.</li>
+    </ul>
   </div>
 </section>
 
@@ -76,42 +80,6 @@ export default function SubmissionAndRegistrationPage() {
     <li><strong>Please Note:</strong> Registration kit is only provided per registration not per paper (one kit per registration (1 or 2 papers))</li>
   </ul>
 </div>
-
-
-<div className="mt-10 bg-primary/10 p-6 rounded-lg border dark:border-gray-700">
-  <h3 className="text-2xl font-bold mb-4 text-primary">Bank Account Details for paying the Registration Fee</h3>
-  <div className="mb-4">
-    <div className="w-full rounded-md bg-primary/10 dark:bg-primary/20 px-4 py-3 text-primary font-bold text-center">
-      For quick payment, scan the QR code shown alongside.
-    </div>
-  </div>
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-    <div className="md:col-span-2 text-gray-700 dark:text-gray-300 space-y-2">
-      <p><strong>Account Number:</strong> 44122037989</p>
-      <p><strong>Account Name:</strong> DIRECTOR SVNIT IEEE SPERT 2025</p>
-      <p><strong>Bank Name:</strong> State Bank of India</p>
-      <p><strong>Branch Address:</strong> SVNIT Branch</p>
-      <p><strong>IFSC:</strong> SBIN0003320</p>
-      <p><strong>City:</strong> Surat, Gujarat State</p>
-      <p><strong>Country:</strong> India</p>
-      
-    </div>
-    <div className="md:col-span-1">
-      <div className="w-full bg-white dark:bg-gray-900 border rounded-md overflow-hidden flex items-center justify-center p-2">
-        <Image
-          src="https://i.ibb.co/sd2fCdDL/qr-code.jpg"
-          alt="qr-code"
-          width={480}
-          height={640}
-          className="object-contain w-full h-auto"
-          priority
-        />
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
             </CardContent>
           </Card>

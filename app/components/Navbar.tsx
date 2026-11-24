@@ -33,6 +33,7 @@ const navItems: NavItem[] = [
       { name: "Special Sessions", href: "/program/call-for-special-session" },
     ],
   },
+  { name: "Registration", href: "/registration" },
   {
     name: "Travel",
     href: "/travel",
