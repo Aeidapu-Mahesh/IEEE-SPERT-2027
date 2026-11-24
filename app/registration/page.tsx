@@ -57,7 +57,7 @@ export default function RegistrationPage() {
     </div>
     <ul className="mt-6 list-disc list-outside pl-6 space-y-1 text-sm text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
       <li>All registration fees are inclusive of 18% GST.</li>
-      <li>5% additional discount to IES Members.</li>
+      <li>5% additional discount to IES, PELS, and IAS Members.</li>
       <li>Payment gateway charges, currency conversion charges, and bank charges, if any, are additional.</li>
       <li>Registration includes the applicable conference participation benefits as specified by the Organizing Committee.</li>
     </ul>
