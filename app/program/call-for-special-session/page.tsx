@@ -131,6 +131,14 @@ export default function CallForSpecialSessionPage() {
                   2. Dr. Vivekanandan, EED, NIT Silchar
                 </p>
               </div>
+
+              <div className="rounded-xl border border-slate-900/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900">
+                <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">SS11: AI, IoT, and Digital Twins for Sustainable Energy and Electric Mobility</h3>
+                <p className="text-slate-600 dark:text-slate-300">
+                  <strong>Organizers:</strong><br />
+                  1. Dr. Pankaj Bhambri, Associate Professor, Department of Information Technology, Guru Nanak Dev Engineering College, Ludhiana
+                </p>
+              </div>
             </div>
           </div>
 
